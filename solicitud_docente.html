@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Solicitud Docente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fontawesome iconos -->
+
+        <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h2>Formulario de Solicitud Docente</h2>
+
+
+<form action="/enviar_solicitud" method="post">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido" required><br><br>
+
+    <label for="email">Correo Electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="telefono_particular">Teléfono Particular:</label><br>
+    <input type="tel" id="telefono_particular" name="telefono_particular"><br><br>
+
+    <label for="telefono_movil">Teléfono Móvil:</label><br>
+    <input type="tel" id="telefono_movil" name="telefono_movil" required><br><br>
+
+    <label for="direccion">Dirección:</label><br>
+    <input type="text" id="direccion" name="direccion" required><br><br>
+
+    <label for="ciudad">Ciudad:</label><br>
+    <input type="text" id="ciudad" name="ciudad" required><br><br>
+
+    <label for="provincia">Provincia:</label><br>
+    <input type="text" id="provincia" name="provincia" required><br><br>
+
+    <label for="codigo_postal">Código Postal:</label><br>
+    <input type="text" id="codigo_postal" name="codigo_postal" required><br><br>
+
+    <p>Curso a aplicar:</p>
+    <input type="checkbox" id="curso_1" name="curso" value="Curso 1">
+    <label for="curso_1">Curso 1</label><br>
+    <input type="checkbox" id="curso_2" name="curso" value="Curso 2">
+    <label for="curso_2">Curso 2</label><br>
+    <!-- Agrega más checkboxes según sea necesario -->
+
+    <br>
+
+    <label for="curriculum">Cargar Curriculum Vitae:</label><br>
+    <input type="file" id="curriculum" name="curriculum" accept=".pdf,.doc,.docx" required><br><br>
+
+    <input type="submit" value="Enviar Solicitud">
+</form>
+
+</body>
+</html>
