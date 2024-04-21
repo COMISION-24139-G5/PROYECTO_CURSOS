@@ -185,3 +185,98 @@ ul {
   height: 5.1em;
   width: 100%;
   transition: 1s ease-in;
+}
+  .solicitud_docente {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 25px;
+    margin: 5px;
+    color: var(--white);
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #2273ff52;
+  }
+
+  .label {
+    font-weight: bold;
+    font-size: 11px;
+    font-family: "Poppins", sans-serif;
+    color:aqua
+  }
+
+  .input  {
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+  .button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    margin-right: 9px;
+    padding: 10px 12px;
+    border-radius: 4px;
+}
+
+.button1 {
+  background-color: rgb(5, 115, 151);
+  transition: transform 0.5s ease;
+}
+
+.button1:hover {
+  transform: translateY(-5px);
+  color: lightgreen;
+}
+
+.button2 {
+  color:aqua;
+  background-color: rgb(5, 115, 151);
+  transition: transform 0.5s ease;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  /* Estilos para navegadores basados en WebKit como Chrome y Safari */
+  background-color: rgba(111, 208, 240, 0.801);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  margin-right: 9px;
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+
+input[type="file"]::-moz-file-upload-button {
+  /* Estilos para navegadores basados en Gecko como Firefox */
+  background-color: rgba(111, 208, 240, 0.801);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  margin-right: 9px;
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+
+
+.custom-file-input-label {
+  /* Estilos adicionales para la etiqueta que representa el botón personalizado */
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-input-container {
+  /* Estilos para el contenedor del campo de entrada */
+  margin-bottom: 10px; /* Margen inferior para separar los elementos */
+}

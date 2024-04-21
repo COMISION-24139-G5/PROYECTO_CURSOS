@@ -4,60 +4,118 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario de Solicitud Docente</title>
+    <title>G5 NODE JS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- fontawesome iconos -->
 
         <!-- css -->
     <link rel="stylesheet" href="styles.css" />
+
+
+    <style>
+        .form-section {
+            display: none;
+        }
+
+        .form-section.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
+<header class="header">
 
-<h2>Formulario de Solicitud Docente</h2>
+<a class="logo">Solicitud Docente</a>
 
+<form class="solicitud_docente" id="solicitud-form" action="/enviar_solicitud" method="post">
+    <div class="form-section active" id="step-1">
+        <h3>Paso 1: Información Personal</h3>
+        <label class="label" for="nombre">Nombre:</label><br>
+        <input class="input" type="text" id="nombre" name="nombre" required><br><br>
 
-<form action="/enviar_solicitud" method="post">
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+        <label class="label" for="apellido">Apellido:</label><br>
+        <input class="input" type="text" id="apellido" name="apellido" required><br><br>
 
-    <label for="apellido">Apellido:</label><br>
-    <input type="text" id="apellido" name="apellido" required><br><br>
+        <label class="label" for="email">Correo Electrónico:</label><br>
+        <input class="input" type="email" id="email" name="email" required><br><br>
 
-    <label for="email">Correo Electrónico:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+        <label class="label" for="telefono_particular">Teléfono Particular:</label><br>
+        <input class="input" type="tel" id="telefono_particular" name="telefono_particular"><br><br>
 
-    <label for="telefono_particular">Teléfono Particular:</label><br>
-    <input type="tel" id="telefono_particular" name="telefono_particular"><br><br>
+        <label class="label" for="telefono_movil">Teléfono Móvil:</label><br>
+        <input class="input" type="tel" id="telefono_movil" name="telefono_movil" required><br><br>
 
-    <label for="telefono_movil">Teléfono Móvil:</label><br>
-    <input type="tel" id="telefono_movil" name="telefono_movil" required><br><br>
+        <button class="button button1" onclick="nextStep()">Siguiente</button>
+    </div>
 
-    <label for="direccion">Dirección:</label><br>
-    <input type="text" id="direccion" name="direccion" required><br><br>
+    <div class="form-section" id="step-2">
+        <h3>Paso 2: Información de Contacto</h3>
+        <label class="label" for="direccion">Dirección:</label><br>
+        <input class="input" type="text" id="direccion" name="direccion" required><br><br>
 
-    <label for="ciudad">Ciudad:</label><br>
-    <input type="text" id="ciudad" name="ciudad" required><br><br>
+        <label class="label" for="ciudad">Ciudad:</label><br>
+        <input class="input" type="text" id="ciudad" name="ciudad" required><br><br>
 
-    <label for="provincia">Provincia:</label><br>
-    <input type="text" id="provincia" name="provincia" required><br><br>
+        <label class="label" for="provincia">Provincia:</label><br>
+        <input class="input" type="text" id="provincia" name="provincia" required><br><br>
 
-    <label for="codigo_postal">Código Postal:</label><br>
-    <input type="text" id="codigo_postal" name="codigo_postal" required><br><br>
+        <label class="label" for="codigo_postal">Código Postal:</label><br>
+        <input class="input" type="text" id="codigo_postal" name="codigo_postal" required><br><br>
 
-    <p>Curso a aplicar:</p>
-    <input type="checkbox" id="curso_1" name="curso" value="Curso 1">
-    <label for="curso_1">Curso 1</label><br>
-    <input type="checkbox" id="curso_2" name="curso" value="Curso 2">
-    <label for="curso_2">Curso 2</label><br>
-    <!-- Agrega más checkboxes según sea necesario -->
+        <button class="button button1" onclick="prevStep()">Anterior</button>
+        <button class="button button1" onclick="nextStep()">Siguiente</button>
+    </div>
 
-    <br>
+    <div class="form-section" id="step-3">
+        <h3>Paso 3: Curso a Aplicar</h3>
+        <p>Selecciona el curso al que deseas aplicar:</p>
+        <input type="checkbox" id="curso_1" name="curso" value="Curso 1">
+        <label class="label" for="curso_1">Curso 1</label><br>
+        <input type="checkbox" id="curso_2" name="curso" value="Curso 2">
+        <label class="label" for="curso_2">Curso 2</label><br>
+        <!-- Agrega más checkboxes según sea necesario -->
 
-    <label for="curriculum">Cargar Curriculum Vitae:</label><br>
-    <input type="file" id="curriculum" name="curriculum" accept=".pdf,.doc,.docx" required><br><br>
+        <button class="button button1" onclick="prevStep()">Anterior</button>
+        <button class="button button1" onclick="nextStep()">Siguiente</button>
+    </div>
 
-    <input type="submit" value="Enviar Solicitud">
+    <div class="form-section" id="step-4">
+        <h3>Paso 4: Curriculum Vitae</h3>
+        <label class="label" for="curriculum">Cargar Curriculum Vitae:</label><br>
+        <input class="input" type="file" id="curriculum" name="curriculum" accept=".pdf,.doc,.docx" required><br><br>
+
+        <button class="button button1" onclick="prevStep()">Anterior</button>
+        <input class="button button2" type="submit" value= "Enviar Solicitud" >
+    
+    </div>
 </form>
 
+<script>
+
+
+
+    let currentStep = 1;
+    const form = document.getElementById('solicitud-form');
+
+    function nextStep() {
+        currentStep++;
+        showStep(currentStep);
+    }
+
+    function prevStep() {
+        currentStep--;
+        showStep(currentStep);
+    }
+
+    function showStep(step) {
+        const sections = document.querySelectorAll('.form-section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById('step-' + step).classList.add('active');
+    }
+</script>
+
+</header>
 </body>
 </html>
