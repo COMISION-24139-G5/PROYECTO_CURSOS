@@ -1,10 +1,18 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G5 NODE JS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- fontawesome iconos -->
 
     <!-- css -->
@@ -13,56 +21,109 @@
   <body>
     <!-- nav -->
     <header class="header">
-      <!-- logo -->
-      <a href="#Inicio" class="logo">G5</a>
       <!-- menu hamb -->
-      <input class="min-menu" type="checkbox" id="side-menu" />
-      <label class="hamb" for="side-menu">
-        <span class="hamb-linea"></span>
-    </label>
-      <!-- menu -->
-      <nav class="nav">
-        <ul class="menu">
-          <li><a href="#Inicio">Inicio</a></li>
-          <li><a href="#Cursos">Cursos</a></li>
-          <li><a href="#InfoAdicional">Info Adicional</a></li>
-          <li><a href="solicitud_docente.html">Solicitud Docente</a></li>
-          <li><a href="#Contacto">Contacto</a></li>
-          <li class="login"><a href="#Login"><i class="fa fa-user"></i><p>LOGIN</p></a></li>
+      <nav>
+        <!-- logo -->
+        <a href="#Inicio" class="logo">G5</a>
+        <div class="min-menu">
+          <ul class="menu">
+            <a class="anchor" href="index.html">
+              <li class="menuItem">Inicio</li>
+            </a>
+            <a class="anchor" href="cursos.html">
+              <li class="menuItem">Cursos</li>
+            </a>
+            <a class="anchor" href="info-adicional.html">
+              <li class="menuItem">Info Adicional</li>
+            </a>
+            <a class="anchor" href="solicitud_docente.html">
+              <li class="menuItem">Solicitud Docente</li>
+            </a>
+            <a class="anchor" href="contacto.html">
+              <li class="menuItem">Contacto</li>
+            </a>
+            <a class="anchor login" href="login.html">
+              <li class="menuItem">
+                <i class="fa fa-user"></i>
+                <p>LOGIN</p>
+              </li>
+            </a>
+          </ul>
+          <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+        </div>
+        <!-- NAV NORMAL -->
+        <ul class="menu-large">
+          <a class="anchor" href="index.html">
+            <li class="large-nav-item">Inicio</li>
+          </a>
+          <a class="anchor" href="cursos.html">
+            <li class="large-nav-item">Cursos</li>
+          </a>
+          <a class="anchor" href="info-adicional.html">
+            <li class="large-nav-item">Info Adicional</li>
+          </a>
+          <a class="anchor" href="solicitud_docente.html">
+            <li class="large-nav-item">Solicitud Docente</li>
+          </a>
+          <a class="anchor" href="contacto.html">
+            <li class="large-nav-item">Contacto</li>
+          </a>
+          <a class="anchor login" href="login.html">
+            <li class="large-nav-item">
+              <i class="fa fa-user"></i>
+              <p>LOGIN</p>
+            </li>
+          </a>
         </ul>
       </nav>
     </header>
     <!-- contenido principal -->
-    <main>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-        <h1 class="contenido">Contenido</h1>
-    </main>
-  </body>
+    <section>
+      ">
+      <div class="contenido">
+        <p class="">Accedé a nuestra charla informativa</p>
+        <a class="mas-info" href="#infoadicional">Más info</a>
+      </div>
+    </section>
+    <h2>Algunos de los cursos que podés adquirir</h2>
+    <!-- SLIDER con cursos -->
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide"><img src="./assets/1.png" alt="" /></div>
+        <div class="slide"><img src="./assets/2.png" alt="" /></div>
+        <div class="slide"><img src="./assets/3.png" alt="" /></div>
+        <div class="slide"><img src="./assets/4.png" alt="" /></div>
+        <div class="slide"><img src="./assets/5.png" alt="" /></div>
+        <div class="slide"><img src="./assets/6.png" alt="" /></div>
+        <div class="slide"><img src="./assets/7.png" alt="" /></div>
+        <div class="slide"><img src="./assets/8.png" alt="" /></div>
+        <!--  -->
+        <div class="slide"><img src="./assets/1.png" alt="" /></div>
+        <div class="slide"><img src="./assets/2.png" alt="" /></div>
+        <div class="slide"><img src="./assets/3.png" alt="" /></div>
+        <div class="slide"><img src="./assets/4.png" alt="" /></div>
+        <div class="slide"><img src="./assets/5.png" alt="" /></div>
+        <div class="slide"><img src="./assets/6.png" alt="" /></div>
+        <div class="slide"><img src="./assets/7.png" alt="" /></div>
+        <div class="slide"><img src="./assets/8.png" alt="" /></div>
+        <!--  -->
+        <div class="slide"><img src="./assets/1.png" alt="" /></div>
+        <div class="slide"><img src="./assets/2.png" alt="" /></div>
+        <div class="slide"><img src="./assets/3.png" alt="" /></div>
+        <div class="slide"><img src="./assets/4.png" alt="" /></div>
+        <div class="slide"><img src="./assets/5.png" alt="" /></div>
+        <div class="slide"><img src="./assets/6.png" alt="" /></div>
+        <div class="slide"><img src="./assets/7.png" alt="" /></div>
+        <div class="slide"><img src="./assets/8.png" alt="" /></div>
+      </div>
+    </div>
+    <!-- FIN SLIDER con cursos -->
+    <p id="texto"> > </p>
 
+    <script src="script.js"></script>
+  </body>
 </html>
