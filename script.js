@@ -29,7 +29,7 @@ menuItems.forEach(
 
 document.addEventListener('DOMContentLoaded', function() {
     const textElement = document.getElementById('texto');
-    const texto = 'Próximamente más cursos';
+    const texto = ' Próximamente más cursos';
     let index = 0;
   
     function textoAnimado() {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         textElement.style.opacity = '1'
         textElement.textContent += texto.charAt(index);
         index++;
-        setTimeout(textoAnimado, 200); // velocidad de aparición del texto 
+        setTimeout(textoAnimado, 250); // velocidad de aparición del texto 
       } else {
         textElement.style.opacity = '1';
       }
@@ -46,3 +46,25 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(textoAnimado, 1000); // inicio de la animación
   });
   
+  // 
+
+
+  //Este evento se ejecuta cuando se ha cargado el DOM
+document.addEventListener('DOMContentLoaded', (event) => {
+  const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+      if (entry.isIntersecting ) {
+        entry.target.classList.add('contador-start');
+      }
+    });
+  },{ threshold: 1});
+
+  // threshold = 1 -> La animación comienza cuando el contador se ve complento
+  // threshold = 0.5 -> La animación comienza cuando el contador se ve la primera mitad
+  // threshold = 0.1 -> La animación comienza cuando el contador se ve un 10%
+  //Es decir toma valores entre 0 y 1
+
+  document.querySelectorAll('.contador').forEach(e=> observer.observe(e));
+
+});
