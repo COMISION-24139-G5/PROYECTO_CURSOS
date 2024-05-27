@@ -1,0 +1,108 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G5 NODE JS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- fontawesome iconos -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="cursos.css" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <body>
+    <!-- nav -->
+    <header class="header">
+      <!-- menu hamb -->
+      <nav>
+        <!-- logo -->
+        <a href="#Inicio" class="logo">G5</a>
+        <div class="min-menu">
+          <ul class="menu">
+            <a class="anchor" href="index.html">
+              <li class="menuItem">Inicio</li>
+            </a>
+            <a class="anchor" href="cursos.html">
+              <li class="menuItem">Cursos</li>
+            </a>
+            <a class="anchor" href="info-adicional.html">
+              <li class="menuItem">Info Adicional</li>
+            </a>
+            <a class="anchor" href="solicitud_docente.html">
+              <li class="menuItem">Solicitud Docente</li>
+            </a>
+            <a class="anchor" href="contacto.html">
+              <li class="menuItem">Contacto</li>
+            </a>
+            <a class="anchor login" href="login.html">
+              <li class="menuItem">
+                <i class="fa fa-user"></i>
+                <p>LOGIN</p>
+              </li>
+            </a>
+          </ul>
+          <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+        </div>
+        <!-- NAV NORMAL -->
+        <ul class="menu-large">
+          <a class="anchor" href="index.html">
+            <li class="large-nav-item">Inicio</li>
+          </a>
+          <a class="anchor" href="cursos.html">
+            <li class="large-nav-item">Cursos</li>
+          </a>
+          <a class="anchor" href="info-adicional.html">
+            <li class="large-nav-item">Info Adicional</li>
+          </a>
+          <a class="anchor" href="solicitud_docente.html">
+            <li class="large-nav-item">Solicitud Docente</li>
+          </a>
+          <a class="anchor" href="contacto.html">
+            <li class="large-nav-item">Contacto</li>
+          </a>
+          <a class="anchor login" href="login.html">
+            <li class="large-nav-item">
+              <i class="fa fa-user"></i>
+              <p>LOGIN</p>
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <section class="cursos-inicio">
+        <div class="cursos-inicio-container">
+            <img class="animate__animated animate__fadeIn" src="https://dinahosting.com/blog/upload/2019/08/programaci%C3%B3n-mitos.jpg" alt="">
+            <h1 class="animate__animated animate__fadeInLeft">APRENDE CON NUESTRA GRAN VARIEDAD DE CURSOS</h1>
+        </div>
+    </section>
+    
+    <!-- contenido principal-->
+    <section>
+      
+      <div class="contenido">
+        <p class="">Accedé a nuestra charla informativa</p>
+        <a class="mas-info" href="#infoadicional">Más info</a>
+      </div>
+    </section>
+
+    <section class="seccion-cards" id="seccion-cursos"></section> 
+
+    <p id="texto"> > </p>
+    
+    <script src="cursos.js"></script>
+
+  </body>
+</html>
