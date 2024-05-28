@@ -1,0 +1,45 @@
+[
+    {
+        "category": "Tecnologías Básicas",
+        "items": [
+            {
+                "imgSrc": "https://www.sketchappsources.com/resources/source-image/python-logo.png",
+                "title": "CURSO DE PYTHON",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magni unde ipsa fuga optio impedit quia quisquam amet iure, ipsum odit exercitationem vitae error suscipit?",
+                "shortTitle": "PYTHON"
+            },
+            {
+                "imgSrc": "https://thumbs.dreamstime.com/b/javascript-logo-editorial-ilustrativo-sobre-fondo-blanco-illustrative-white-background-eps-descargar-vector-jpeg-banner-208329459.jpg",
+                "title": "CURSO DE JAVASCRIPT",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magni unde ipsa fuga optio impedit quia quisquam amet iure, ipsum odit exercitationem vitae error suscipit?",
+                "shortTitle": "JAVASCRIPT"
+            },
+            {
+                "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnE4xktqBeD9_GV397E85ckF-CS7Or4peRNC173fqjFA&s",
+                "title": "CURSO DE REACT",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magni unde ipsa fuga optio impedit quia quisquam amet iure, ipsum odit exercitationem vitae error suscipit?",
+                "shortTitle": "REACT"
+            }
+        ]
+    },
+    {
+        "category": "Marketing",
+        "items": [
+            {
+                "imgSrc": "https://static.vecteezy.com/system/resources/previews/005/348/688/non_2x/digital-marketing-logo-design-suitable-for-your-business-logo-free-vector.jpg",
+                "title": "CURSO DE MARKETING",
+                "description": "Descripción del curso de marketing.",
+                "shortTitle": "MARKETING"
+            },
+            {
+                "imgSrc": "https://elements-cover-images-0.imgix.net/3341f5cb-bd0f-4c41-a7ca-909c397d2b85?auto=compress&h=630&w=1200&fit=crop&crop=edges&fm=jpeg&s=c9a617f0c39aba78bf6cee84c094eb13",
+                "title": "CURSO DE DISEÑO UX/UI",
+                "description": "Descripción del curso de marketing.",
+                "shortTitle": "DISEÑO UX/UI"
+            }
+            
+        ]
+
+        
+    }
+]

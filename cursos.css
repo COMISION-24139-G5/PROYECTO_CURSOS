@@ -21,7 +21,7 @@ section {
   text-align: center;
 }
 
-header{
+header {
   height: 4.7rem;
 }
 /* contenido */
@@ -55,10 +55,7 @@ header{
   width: 100vw;
   height: 50vw;
   display: flex;
-  mask-image: linear-gradient(
-    black 70%,
-    transparent
-  );
+  mask-image: linear-gradient(black 70%, transparent);
 }
 
 .cursos-inicio h1 {
@@ -71,6 +68,14 @@ header{
   color: white;
 }
 
+.cursos-inicio p {
+  position: absolute;
+  width: 30%;
+  font-size: 2.2vw;
+  margin: 16vw 0 0 11vw;
+  border-radius: 5px;
+  color: white;
+}
 
 /* boton mas info */
 .mas-info {
@@ -90,7 +95,6 @@ header{
   box-shadow: 0px 10px 20px 2px var(--blue);
   background-color: #2273ff5d;
 }
-
 
 /* scroll */
 ::-webkit-scrollbar {
@@ -194,117 +198,193 @@ h2 {
   border: 1px solid var(--blue);
 }
 
+/* SECCIONES */
+
+.titulo h1 {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 1% 0;
+  font-size: 3vw;
+}
+
+.categoria {
+  width: 95%;
+  padding: 3rem 0 3.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20rem;
+}
+
+.categoria::before,
+.categoria::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  height: 10%;
+  background-image: conic-gradient(transparent, transparent, rgb(2, 34, 214));
+  animation: animate 3s linear infinite;
+  z-index: -2;
+}
+
+/* Sincronizar las animaciones */
+.categoria::before {
+  animation-delay: 0s;
+}
+
+.categoria::after {
+  animation-delay: 1.5s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.categoria span {
+  position: absolute;
+  inset: 5px;
+  background: #0f1011;
+  border-radius: 20rem;
+  z-index: -1;
+}
+
+.categoria h1 {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  font-size: 3vw;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.seccion-cards h1 {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin: 3% 0 2% 0;
+  font-size: 3vw;
+}
 
 /* cards */
 
-.seccion-cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.seccion-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.card{
-    position: relative;
-    width: 350px;
-    height: 450px;
-    margin: 20px;
+.card {
+  position: relative;
+  width: 350px;
+  height: 450px;
+  margin: 20px;
 }
 
-.card .face{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10%;
-    overflow: hidden;
-    transition: .5s;
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10%;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
-.card .front{
-    transform: perspective(600px) rotateY(0deg);   
-    box-shadow: 0px 5px 10px white;
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0px 5px 10px white;
 }
 
-.card .front img{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.card .front img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.card .front h3{
-    position: absolute;
-    width: 100%;
-    height: 45px;
-    bottom: 0;
-    line-height: 45px;
-    color: #18191b;
-    background-color: rgba(0,0,0,.6);
-    text-align: center;
-   
+.card .front h3 {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  bottom: 0;
+  line-height: 45px;
+  color: #18191b;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
 }
 
-.card .back{
-    transform: perspective(600px) rotateY(180deg);
-    background: #2272ff;
-    padding: 30px;
-    color: #f3f3f3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    box-shadow: 0px 5px 10px white;
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #2272ff;
+  padding: 30px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0px 5px 10px white;
 }
 
-.card .back h3{
-    font-size: 30px;
-    margin-top: 15px;
-    letter-spacing: 2px;
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 15px;
+  letter-spacing: 2px;
 }
 
-.card .back p{
-    letter-spacing: 2px;
+.card .back p {
+  letter-spacing: 2px;
 }
 
-.card:hover .front{
-    transform: perspective(600px) rotateY(180deg);
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
 }
 
-.card:hover .back{
-    transform: perspective(600px) rotateY(360deg);
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
 }
 
-      /* Estilos para el botón */
+/* Estilos para el botón */
 
 .card .back .boton-compra button {
-    display: inline-block;
-    padding: 15px 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border: 2px solid #2272ff;
-    color: #2272ff;
-    background-color: #f3f3f3;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: 0.5s;
-  }
-  
-  .card .back .boton-compra button:hover {
-    padding: 20px 45px;
-    transition: 0.5s;
-  }
-  
-  .card .back .boton-compra button:active {
-    background-color: #0a295e;
-    border-color: #0a295e;
-    transition: 0.1s;
-  }
-  
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #2272ff;
+  color: #2272ff;
+  background-color: #f3f3f3;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+}
 
+.card .back .boton-compra button:hover {
+  padding: 20px 45px;
+  transition: 0.5s;
+}
+
+.card .back .boton-compra button:active {
+  background-color: #0a295e;
+  border-color: #0a295e;
+  transition: 0.1s;
+}
 
 @media screen and (max-width: 866px) {
   .menu-large {
@@ -377,12 +457,22 @@ h2 {
     color: var(--white);
   }
   .contenido {
-    margin-top: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
-  .slider-wrapper{
+  .slider-wrapper {
     position: relative;
     max-width: 100%;
     margin: 0em 5em;
     padding-top: 4em;
   }
+
+  .titulo h1 {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-size: 5vw;
+  }
+
 }
