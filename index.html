@@ -5,7 +5,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G5 NODE JS</title>
@@ -19,80 +22,85 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- nav -->
-    <header class="header">
-      <!-- menu hamb -->
-      <nav>
-        <!-- logo -->
-        <a href="#Inicio" class="logo">G5</a>
-        <div class="min-menu">
-          <ul class="menu">
-            <a class="anchor" href="index.html">
-              <li class="menuItem">Inicio</li>
-            </a>
-            <a class="anchor" href="cursos.html">
-              <li class="menuItem">Cursos</li>
-            </a>
-            <a class="anchor" href="info-adicional.html">
-              <li class="menuItem">Info Adicional</li>
-            </a>
-            <a class="anchor" href="solicitud_docente.html">
-              <li class="menuItem">Solicitud Docente</li>
-            </a>
-            <a class="anchor" href="contacto.html">
-              <li class="menuItem">Contacto</li>
-            </a>
-            <a class="anchor login" href="login.html">
-              <li class="menuItem">
-                <i class="fa fa-user"></i>
-                <p>LOGIN</p>
-              </li>
-            </a>
-          </ul>
-          <button class="hamburger">
-            <!-- material icons https://material.io/resources/icons/ -->
-            <i class="menuIcon material-icons">menu</i>
-            <i class="closeIcon material-icons">close</i>
-          </button>
+    <!-- banner infinito oferta -->
+    <div class="banner" id="banner">
+      <div class="banner-track">
+        <div class="banner-slide">
+          <p>
+            *** ¡APROVECHA! El 30% de descuento en tu primer curso y un 15% a
+            partir de segundo. ¡APURATE QUE ES POR TIEMPO LIMITADO HASTA EL
+            10-08! ***
+          </p>
+          <p>
+            *** ¡APROVECHA! El 30% de descuento en tu primer curso y un 15% a
+            partir de segundo. ¡APURATE QUE ES POR TIEMPO LIMITADO HASTA EL
+            10-08! ***
+          </p>
         </div>
-        <!-- NAV NORMAL -->
-        <ul class="menu-large">
-          <a class="anchor" href="index.html">
-            <li class="large-nav-item">Inicio</li>
+      </div>
+    </div>
+    <!-- fin banner -->
+    <!-- nav -->
+
+    <!-- menu hamb -->
+
+    <nav id="nav">
+      <!-- logo -->
+      <a href="#Inicio" class="logo">G5</a>
+      <div class="min-menu">
+        <ul class="menu">
+          <a class="anchor1" href="index.html">
+            <li class="menuItem">Inicio</li>
           </a>
-          <a class="anchor" href="cursos.html">
-            <li class="large-nav-item">Cursos</li>
+          <a class="anchor1" href="cursos.html">
+            <li class="menuItem">Cursos</li>
           </a>
-          <a class="anchor" href="info-adicional.html">
-            <li class="large-nav-item">Info Adicional</li>
+          <a class="anchor1" href="solicitud_docente.html">
+            <li class="menuItem">Solicitud Docente</li>
           </a>
-          <a class="anchor" href="solicitud_docente.html">
-            <li class="large-nav-item">Solicitud Docente</li>
-          </a>
-          <a class="anchor" href="contacto.html">
-            <li class="large-nav-item">Contacto</li>
-          </a>
-          <a class="anchor login" href="login.html">
-            <li class="large-nav-item">
+
+          <a class="anchor1 login" href="login.html">
+            <li class="menuItem">
               <i class="fa fa-user"></i>
               <p>LOGIN</p>
             </li>
           </a>
         </ul>
-      </nav>
-    </header>
-    <!-- contenido principal -->
-    <section>
-      ">
-      <div class="contenido">
-        <p class="">Accedé a nuestra charla informativa</p>
-        <a class="mas-info" href="#infoadicional">Más info</a>
+
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
       </div>
-    </section>
-    <h2>Algunos de los cursos que podés adquirir</h2>
+
+      <!-- NAV NORMAL -->
+      <ul class="menu-large">
+        <a class="anchor1" href="index.html">
+          <li class="large-nav-item">Inicio</li>
+        </a>
+        <a class="anchor1" href="cursos.html">
+          <li class="large-nav-item">Cursos</li>
+        </a>
+        <a class="anchor1" href="solicitud_docente.html">
+          <li class="large-nav-item">Solicitud Docente</li>
+        </a>
+        <a class="anchor1 login" href="login.html">
+          <li class="large-nav-item">
+            <i class="fa fa-user"></i>
+            <p>LOGIN</p>
+          </li>
+        </a>
+      </ul>
+    </nav>
+
+    <!-- contenido principal -->
+
+    <h2>Algunos de los cursos que podés adquirir. ¡Elegí el tuyo!</h2>
     <!-- PROXIMAMENTE MAS CURSOS -->
     <p id="texto">></p>
-<!--  -->
+    <!--  -->
+    <!-- <input class="input" type="file" id="curriculum" name="curriculum" accept=".pdf,.doc,.docx" required=""> -->
     <!-- SLIDER con cursos -->
     <div class="slider">
       <div class="slide-track">
@@ -113,31 +121,90 @@
         <div class="slide"><img src="./assets/6.png" alt="" /></div>
         <div class="slide"><img src="./assets/7.png" alt="" /></div>
         <div class="slide"><img src="./assets/8.png" alt="" /></div>
-        <!--  -->
-        <div class="slide"><img src="./assets/1.png" alt="" /></div>
-        <div class="slide"><img src="./assets/2.png" alt="" /></div>
-        <div class="slide"><img src="./assets/3.png" alt="" /></div>
-        <div class="slide"><img src="./assets/4.png" alt="" /></div>
-        <div class="slide"><img src="./assets/5.png" alt="" /></div>
-        <div class="slide"><img src="./assets/6.png" alt="" /></div>
-        <div class="slide"><img src="./assets/7.png" alt="" /></div>
-        <div class="slide"><img src="./assets/8.png" alt="" /></div>
       </div>
     </div>
     <!-- FIN SLIDER con cursos -->
-    
-    <button><a href="cursos.html">VER CURSOS</a></button>
+    <!-- ver cursos -->
+    <p><a class="cursos" href="#">⇢ VER TODOS LOS CURSOS ⇠</a></p>
+
     <!-- INFO ALUMNOS -->
     <div class="estudiantes" background="./assets/world.mov">
       <p>Evolucionamos con vos</p>
-      <div class="estudiantes-cont"><p> +</p> <div class="contador" style="--contarhasta:280000"></div></div>
+      <div class="estudiantes-cont">
+        <p>+</p>
+        <div class="contador" style="--contarhasta: 280000"></div>
+      </div>
       <p>Estudiantes</p>
-      <div class="contador" style="--contarhasta:90">%</div> 
+      <div class="cursos-fin">
+        <div class="contador" style="--contarhasta: 90"></div>
+        <p>%</p>
+      </div>
       <p>Cursos finalizados</p>
-      <div class="estudiantes-cont"><p> +</p> <div class="contador" style="--contarhasta:30"></div></div>
 
-      <p> Cursos disponibles</p>
+      <div class="estudiantes-cont">
+        <p>+</p>
+        <div class="contador" style="--contarhasta: 30"></div>
+      </div>
+      <p>Cursos disponibles</p>
     </div>
+
+    <!-- /* CARD TESTIMONIOS SLIDER */ -->
+
+    <!-- /* FIN CARD TEST SLIDER */ -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="container">     
+          <div class="row">                       
+              <div class="col-lg-4 col-sm-4 col-xs-12">
+                  <div class="single_footer">
+                      <h4>Nosotros</h4>
+                      <ul>
+                          <li><a href="#">Inicio</a></li>
+                          <li><a href="#">Solicitud Docente</a></li>
+                          <li><a href="#">Cursos </a></li>
+                          <li><a href="#">LOGIN</a></li>
+                          
+                      </ul>
+                  </div>
+              </div><!--- END COL --> 
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="single_footer single_footer_address">
+                      <h4>Síguenos en nuestras redes</h4>
+                      <ul>
+                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                          Linkedin</a></li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+                          mail@1234567.com</a></li>                        </div>
+              </div><!--- END COL -->
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="single_footer single_footer_address">
+                      <h4>Suscríbete</h4>
+                      <div class="signup_form">                           
+                          <form action="#" class="subscribe">
+                              <input type="text" class="subscribe__input" placeholder="Ingresá tu mail">
+                              <button type="button" class="subscribe__btn"><i class="fas fa-paper-plane"></i></button>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="social_profile">
+                      <ul>
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      </ul>
+                  </div>                          
+              </div><!--- END COL -->         
+          </div><!--- END ROW --> 
+          <div class="row2">
+              <div class="col-lg-12 col-sm-12 col-xs-12">
+                  <p class="copyright">Copyright © 2024 Codo a Codo 4.0 - Full Stack NodeJS - GRUPO 5</p>
+              </div><!--- END COL -->                 
+          </div><!--- END ROW -->                 
+      </div><!--- END CONTAINER -->
+  </div>
+    <!-- FIN FOOTER -->
     <script src="script.js"></script>
   </body>
 </html>

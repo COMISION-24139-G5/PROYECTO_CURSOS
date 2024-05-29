@@ -1,3 +1,23 @@
+// fixed nav
+document.addEventListener("DOMContentLoaded", function() {
+  const nav = document.getElementById('nav');
+  const banner = document.getElementById('banner');
+  const bannerHeight = banner.offsetHeight;
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY >= bannerHeight) {
+      nav.classList.add('fixed');
+      banner.classList.add('fixed'); // Agrega la clase 'fixed' al banner
+    } else {
+      nav.classList.remove('fixed');
+      banner.classList.remove('fixed'); // Quita la clase 'fixed' del banner
+    }
+  });
+});
+
+// 
+
+
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger = document.querySelector(".hamburger");
@@ -37,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         textElement.style.opacity = '1'
         textElement.textContent += texto.charAt(index);
         index++;
-        setTimeout(textoAnimado, 250); // velocidad de aparición del texto 
+        setTimeout(textoAnimado, 200); // velocidad de aparición del texto 
       } else {
         textElement.style.opacity = '1';
       }
@@ -60,11 +80,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   },{ threshold: 1});
 
-  // threshold = 1 -> La animación comienza cuando el contador se ve complento
-  // threshold = 0.5 -> La animación comienza cuando el contador se ve la primera mitad
-  // threshold = 0.1 -> La animación comienza cuando el contador se ve un 10%
-  //Es decir toma valores entre 0 y 1
+  // threshold = 1 -> La animacion comienza cuando el contador se ve completo, 0.5 -> comienza cuando el contador se ve la primera mitad, 0.1 ->  comienza cuando el contador se ve un 10%
+  // toma valores entre 0 y 1
 
   document.querySelectorAll('.contador').forEach(e=> observer.observe(e));
 
 });
+// CARD TESTIMONIOS SLIDER
+
+
+
+// FIN CARD TEST SLIDER
