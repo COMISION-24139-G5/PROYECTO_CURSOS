@@ -1,12 +1,12 @@
 [
     {
-        "category": "Tecnologías Básicas",
+        "category": "Desarrollo Web",
         "items": [
             {
-                "imgSrc": "https://www.sketchappsources.com/resources/source-image/python-logo.png",
-                "title": "CURSO DE PYTHON",
+                "imgSrc": "https://velog.velcdn.com/images/chhaewxn/post/5c18ad07-1477-4c39-afd7-ef8b9060e6b8/image.png",
+                "title": "CURSO DE NODE JS",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magni unde ipsa fuga optio impedit quia quisquam amet iure, ipsum odit exercitationem vitae error suscipit?",
-                "shortTitle": "PYTHON"
+                "shortTitle": "NODE JS"
             },
             {
                 "imgSrc": "https://thumbs.dreamstime.com/b/javascript-logo-editorial-ilustrativo-sobre-fondo-blanco-illustrative-white-background-eps-descargar-vector-jpeg-banner-208329459.jpg",
@@ -28,14 +28,47 @@
             {
                 "imgSrc": "https://static.vecteezy.com/system/resources/previews/005/348/688/non_2x/digital-marketing-logo-design-suitable-for-your-business-logo-free-vector.jpg",
                 "title": "CURSO DE MARKETING",
-                "description": "Descripción del curso de marketing.",
+                "description": "Descripción del curso.",
                 "shortTitle": "MARKETING"
             },
             {
                 "imgSrc": "https://elements-cover-images-0.imgix.net/3341f5cb-bd0f-4c41-a7ca-909c397d2b85?auto=compress&h=630&w=1200&fit=crop&crop=edges&fm=jpeg&s=c9a617f0c39aba78bf6cee84c094eb13",
                 "title": "CURSO DE DISEÑO UX/UI",
-                "description": "Descripción del curso de marketing.",
+                "description": "Descripción del curso.",
                 "shortTitle": "DISEÑO UX/UI"
+            }
+            
+        ]
+
+        
+    },
+    {
+        "category": "Datos",
+        "items": [
+            {
+                "imgSrc": "https://assets.softr-files.com/applications/143def2e-1eb3-4b2c-9866-2f9a7952aa82/assets/8ee4e6b7-8315-487c-8a61-aa37a7823563.png",
+                "title": "CURSO BB.DD.",
+                "description": "Descripción del curso.",
+                "shortTitle": "MARKETING"
+            },
+            {
+                "imgSrc": "https://png.pngtree.com/png-clipart/20200722/original/pngtree-analytics-data-vector-logo-png-image_4945671.jpg",
+                "title": "CURSO DE ANALYTICS DATA",
+                "description": "Descripción del curso.",
+                "shortTitle": "DISEÑO UX/UI"
+            }
+            ,
+            {
+                "imgSrc": "https://previews.123rf.com/images/antonshaparenko/antonshaparenko1907/antonshaparenko190700770/128871382-big-data-thin-line-icon-creative-simple-design-from-artificial-intelligence-icons-collection-outline.jpg",
+                "title": "CURSO DE BIG DATA",
+                "description": "Descripción del curso.",
+                "shortTitle": "DISEÑO UX/UI"
+            },   
+            {
+                "imgSrc": "https://www.sketchappsources.com/resources/source-image/python-logo.png",
+                "title": "CURSO DE PYTHON",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magni unde ipsa fuga optio impedit quia quisquam amet iure, ipsum odit exercitationem vitae error suscipit?",
+                "shortTitle": "PYTHON"
             }
             
         ]
